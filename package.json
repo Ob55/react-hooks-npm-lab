@@ -3,7 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "serve",
+    "build": "esbuild index.js --bundle --outfile=dist/out.js"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "esbuild": "^0.14.10"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "serve": "^12.0.2"
   },
   "browserslist": {
     "production": [
@@ -18,7 +28,6 @@
     ]
   },
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/learn-co-curriculum/react-hooks-npm-lab.git"
